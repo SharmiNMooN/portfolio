@@ -8,10 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Sharmin Akter </span>
-            from <span className="purple"> Dhaka, Bangladesh.</span>
-            <br />A software engineer with passion of developing full stack applications using NodeJS, ReactJS, MongoDB, MySQL.
-            I have good knowledge and experience in NodeJS, ReactJS and HTML/CSS, bootstrap, tailwind css, and have develop some applications and most of them for learning purpose.
+            Hi Everyone, I am <span className="blue">Sharmin</span>
+            from <span className="blue"> Dhaka, Bangladesh.</span>
+            <br />A software engineer with passion of developing full stack
+            applications using NodeJS, ReactJS, MongoDB, MySQL. I have good
+            knowledge and experience in NodeJS, ReactJS and HTML/CSS, bootstrap,
+            tailwind css, and have develop some applications and most of them
+            for learning purpose.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
+import quiz from "../../Assets/Projects/quiz.png";
+import worldcup from "../../Assets/Projects/worldcup.png";
+import resell from "../../Assets/Projects/resell.png";
 import shikkhayon from "../../Assets/Projects/shikkhayon.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import football from "../../Assets/Projects/football.png";
+import immigration from "../../Assets/Projects/immigration.png";
 
 function Projects() {
   return (
@@ -34,57 +34,58 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={immigration}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="immigration-and-consultancy"
+              description="I provide Immigration, visa consultancy, and I am providing career counselling for professionals. I have several years experience in visa consultancy and career counselling arena. I have counselled 30+ professionals, and help them to grow in their career.Immigration is the process of moving to a new country or region with the intention of staying and living there."
+              ghLink="https://github.com/SharmiNMooN/immigration-and-consultancy"
+              demoLink="https://immigration-and-consultancy.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={resell}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"
+              title="Used Laptop Buy & Sell"
+              description="This is an open platform where buyer can buy used laptop, and seller can sell their used laptop using this platform. Though the definition can no longer be used in a single direction, thanks to its ability to store songs, watch movies on, store snaps, files, and many more. But primarily it is used widely for work purposes. It brings a sense of style and status."
+              ghLink="https://github.com/SharmiNMooN/online-resell-platform"
+              demoLink="https://resell-laptop.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={quiz}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Quiz Hunter"
+              description="This is an quiz application where peoples can do quiz test in various topics and justify their knowledges."
+              ghLink="https://github.com/SharmiNMooN/online-quiz-web-app"
+              demoLink="https://63455aa31c79403e760f17f2--quiz-hunter.netlify.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={football}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
+              title="Best Five Players"
+              description="The creativity and zeal that typify the beautiful game of football (soccer) would render it an art form if not for the physical context within which the sport is played. What distinguishes football from most other sports is the freedom of expression granted to the players."
+              ghLink="https://github.com/SharmiNMooN/football-players"
+              demoLink="https://63455aa31c79403e760f17f2--quiz-hunter.netlify.app/"
+            ></ProjectCard>
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={worldcup}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here
+              title="The Greatest
+              show on the
+              earth"
+              description="The FIFA World Cup 2022™ in Qatar is the first to be hosted in the Middle East and the most geographically compact since the inaugural edition of the tournament in 1930."
+              ghLink="https://github.com/SharmiNMooN/world-cup"
+              demoLink="https://63455aa31c79403e760f17f2--quiz-hunter.netlify.app/"
             />
           </Col>
         </Row>
