@@ -7,6 +7,7 @@ import {
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
+import JotformEmbed from 'react-jotform-embed';
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -56,6 +57,10 @@ function Home2() {
           </Col>
         </Row>
         <Row>
+          <Col md={6} className="m-auto home-about-social contact">
+            <h1>CONTACT ME</h1>
+            <JotformEmbed src="https://form.jotform.com/223434659314457" />
+          </Col>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
