@@ -64,30 +64,6 @@ function Projects() {
               demoLink="https://63455aa31c79403e760f17f2--quiz-hunter.netlify.app/"
             />
           </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={football}
-              isBlog={false}
-              title="Best Five Players"
-              description="The creativity and zeal that typify the beautiful game of football (soccer) would render it an art form if not for the physical context within which the sport is played. What distinguishes football from most other sports is the freedom of expression granted to the players."
-              ghLink="https://github.com/SharmiNMooN/football-players"
-              demoLink=""
-            ></ProjectCard>
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={worldcup}
-              isBlog={false}
-              title="The Greatest
-              show on the
-              earth"
-              description="The FIFA World Cup 2022™ in Qatar is the first to be hosted in the Middle East and the most geographically compact since the inaugural edition of the tournament in 1930."
-              ghLink="https://github.com/SharmiNMooN/world-cup"
-              demoLink=""
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
