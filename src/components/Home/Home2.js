@@ -2,12 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import JotformEmbed from 'react-jotform-embed';
+import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
+import JotformEmbed from "react-jotform-embed";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -28,7 +24,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My field of Interest's are &nbsp;
               <i>
                 <b className="purple">
                   Software Engineering and Full-stack software Engineering{" "}
@@ -36,18 +32,6 @@ function Home2() {
               </i>
               <br />
               <br />
-              {/* Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">
