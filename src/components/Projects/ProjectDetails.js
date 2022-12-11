@@ -24,7 +24,9 @@ function ProjectDetails() {
       <Row>
         <Col md={8} className="m-auto">
           <Card className="project-card-view">
-            <Carousel fade>{sliderImage}</Carousel>
+            <Carousel nextLabel="Next" prevLabel="Prev" variant="dark" fade>
+              {sliderImage}
+            </Carousel>
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
