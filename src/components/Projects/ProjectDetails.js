@@ -3,40 +3,33 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 import { useLocation } from "react-router-dom";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Carousel } from "react-bootstrap";
 function ProjectDetails() {
-  const [open, setOpen] = React.useState(false);
   const { state: project } = useLocation();
 
   console.log({ project });
   const features = project.feature.map((number, idx) => (
     <li key={idx}>{number}</li>
   ));
+
+  const sliderImage = project.images.map((img, idx) => (
+    <Carousel.Item key={idx}>
+      <img className="d-block w-100" src={img.src} alt="Project Pic" />
+    </Carousel.Item>
+  ));
+
   return (
     <Container fluid className="project-section">
       <Row>
         <Col md={8} className="m-auto">
           <Card className="project-card-view">
-            <Card.Img
-              onClick={() => setOpen(true)}
-              variant="top"
-              src={project.imgPath}
-              alt="card-img"
-            />
+            <Carousel fade>{sliderImage}</Carousel>
             <Card.Body>
               <Card.Title>{project.title}</Card.Title>
               <Card.Text style={{ textAlign: "justify" }}>
                 {project.description}
               </Card.Text>
-
-              <Lightbox
-                open={open}
-                close={() => setOpen(false)}
-                slides={project.images}
-              />
 
               <div className="text-start">
                 <Card.Subtitle>Features</Card.Subtitle>
